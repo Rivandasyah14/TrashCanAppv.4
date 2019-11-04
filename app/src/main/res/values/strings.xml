@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrashCan v.4</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="t_edt_email">Email</string>
+    <string name="sign_in">Sign In</string>
+</resources>
