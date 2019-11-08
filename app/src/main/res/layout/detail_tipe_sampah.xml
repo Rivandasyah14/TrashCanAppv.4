@@ -46,12 +46,12 @@
                 android:orientation="horizontal"
                 android:layout_below="@id/rel_contoh">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/tipe_img"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/iconapp_green"
+                    android:src="@color/colorPrimaryDark"
                     android:padding="@dimen/padding10"
                     tools:ignore="ContentDescription" />
 
@@ -61,12 +61,12 @@
                     android:background="@android:color/darker_gray"/>
 
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/tipe_imgt"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/iconapp_green"
+                    android:src="@color/colorPrimaryDark"
                     android:padding="@dimen/padding10"
                     tools:ignore="ContentDescription" />
 

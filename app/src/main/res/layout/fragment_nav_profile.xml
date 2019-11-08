@@ -37,7 +37,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:text="Anisah Nurul Azhar"
+                        android:text="Nama User"
                         android:textColor="#fff"
                         android:textSize="21sp"
                         android:textStyle="bold" />
@@ -107,10 +107,14 @@
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_width="340dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingRight="@dimen/padding20"
+                android:paddingLeft="@dimen/padding20"
+                android:layout_marginLeft="@dimen/padding20"
+                android:layout_marginRight="@dimen/padding20">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -118,72 +122,94 @@
                         android:layout_gravity="center_vertical"
                         android:drawableLeft="@drawable/ic_edt_user"
                         android:drawablePadding="5dp"
-                        android:paddingLeft="10dp"
                         android:text="Transaksi"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="17dp"
+                        android:textSize="@dimen/text16"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/padding20"
+                        android:layout_marginLeft="@dimen/padding25"
                         android:paddingTop="6dp"
                         android:text="30 Transaksi"
                         android:textSize="15sp" />
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:drawableLeft="@drawable/ic_edt_user"
-                        android:drawablePadding="8dp"
-                        android:paddingLeft="10dp"
-                        android:text=" Alamat  "
-                        android:layout_marginTop="@dimen/padding10"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="17dp"
-                        android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_edt_user"
+                    android:drawablePadding="5dp"
+                    android:text="Alamat"
+                    android:layout_marginTop="@dimen/padding10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="45dp"
-                        android:paddingTop="6dp"
-                        android:text="jl.pahlawan komplek assunnah II 03/03 blok a no.3"
-                        android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding25"
+                    android:paddingTop="6dp"
+                    android:text="Jl.Komplek Assunnah 2"
+                    android:textSize="15sp" />
 
 
-                    <TextView
-                        android:layout_width="231dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginTop="@dimen/padding10"
-                        android:drawableLeft="@drawable/ic_edt_user"
-                        android:drawablePadding="8dp"
-                        android:paddingLeft="10dp"
-                        android:text=" Nomor Telepon  "
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="17dp"
-                        android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_edt_user"
+                    android:drawablePadding="5dp"
+                    android:text="Email"
+                    android:layout_marginTop="@dimen/padding10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="45dp"
-                        android:paddingTop="6dp"
-                        android:text=" 087888343176 "
-                        android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding25"
+                    android:paddingTop="6dp"
+                    android:text="user@gmail.com"
+                    android:textSize="15sp" />
 
-                    <Button
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_edt_user"
+                    android:drawablePadding="5dp"
+                    android:text="Telefon"
+                    android:layout_marginTop="@dimen/padding10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding25"
+                    android:paddingTop="6dp"
+                    android:text="0812 3456 7890"
+                    android:textSize="15sp" />
+
+
+
+
+
+                <Button
                         android:id="@+id/tnlogout"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="@dimen/padding20"
                         android:layout_marginBottom="100dp"
-                        android:background="@drawable/tnshape"
+                        android:background="@color/colorPrimary"
                         android:text="Logout"
                         android:textColor="#fff" />
 
