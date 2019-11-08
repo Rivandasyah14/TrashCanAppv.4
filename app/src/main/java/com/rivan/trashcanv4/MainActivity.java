@@ -6,15 +6,11 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.rivan.trashcanv4.nav.FragmentNavHistory;
+import com.rivan.trashcanv4.nav.FragmentNavInformation;
 import com.rivan.trashcanv4.nav.FragmentNavHome;
 import com.rivan.trashcanv4.nav.FragmentNavProfile;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavHome()).commit();
                     return true;
-                case R.id.navigation_history:
-                    Intent a = new Intent(getApplicationContext(), FragmentNavHistory.class);
-                    startActivity(a);
+                case R.id.navigation_information:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavInformation()).commit();
                     return true;
                 case R.id.navigation_profile:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavProfile()).commit();

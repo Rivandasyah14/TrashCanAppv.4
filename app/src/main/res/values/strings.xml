@@ -16,7 +16,6 @@
     <string name="belum_punya">Belum punya</string>
     <string name="akun"> akun?</string>
     <string name="sign_up">Sign Up</string>
-    <string name="sudah_punya">Sudah punya </string>
     <string name="t_edt_username">Username</string>
     <string name="confirm_password">Confirm Parssword</string>
     <string name="title_history">Riwayat</string>
@@ -24,11 +23,12 @@
     <string name="judul_tipe_sampah">Judul tipe sampah</string>
     <string name="contoh">Contoh</string>
     <string name="rincian">Rincian</string>
-    <string name="nama_lain">Nama Lain</string>
-    <string name="nama_lain_des">Clear pet bottle, Colored pet bottle</string>
+    <string name="nama_lain">Nama</string>
+    <string name="nama_lain_des">bottle</string>
     <string name="deskripsi">Deskripsi</string>
     <string name="deskripsi_des">Botol air minuman colored pet, atau clear pet</string>
     <string name="tips_tukar_sampah">Tips tukar sampah</string>
     <string name="tips_tukar_sampah_des">Botol sudah dalam keadaan kering, dan label telah dilepas</string>
     <string name="sudah_punya">Sudah punya</string>
+    <string name="title_information">Informasi</string>
 </resources>
