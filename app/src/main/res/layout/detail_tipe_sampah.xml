@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingall"
+    tools:context=".tipesampah.DetailTipeSampah">
+
+    <TextView
+        android:id="@+id/tipe_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding10"
+        android:text="@string/judul_tipe_sampah"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text20" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tipe_cvcontoh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="@dimen/padding5"
+        app:cardCornerRadius="@dimen/padding10"
+        app:cardElevation="@dimen/padding5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding5">
+
+            <TextView
+                android:id="@+id/rel_contoh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contoh"
+                android:textSize="@dimen/text20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/rel_contoh">
+
+                <ImageView
+                    android:id="@+id/tipe_img"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/iconapp_green"
+                    android:padding="@dimen/padding10"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+
+
+                <ImageView
+                    android:id="@+id/tipe_imgt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/iconapp_green"
+                    android:padding="@dimen/padding10"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tipe_cvrincian"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="@dimen/padding20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding5">
+
+            <TextView
+                android:id="@+id/rel_rincian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rincian"
+                android:textSize="@dimen/text20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:text="@string/nama_lain"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/tipe_namalain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:text="@string/nama_lain_des"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:text="@string/deskripsi"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/tipe_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:text="@string/deskripsi_des"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18"
+                android:maxLines="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:text="@string/tips_tukar_sampah"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18" />
+
+            <TextView
+                android:id="@+id/tipe_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:text="@string/tips_tukar_sampah_des"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18"
+                android:maxLines="3"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
