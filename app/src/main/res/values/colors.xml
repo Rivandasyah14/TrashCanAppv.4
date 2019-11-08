@@ -2,11 +2,17 @@
 <resources>
     <color name="colorPrimary">#388e3c</color>
     <color name="colorPrimaryDark">#00600f</color>
-    <color name="colorPrimaryLight">#6abf69</color>
-    <color name="colorAccent"> #ffea00</color>
-    <color name="colorAccentLight">#ffff56</color>
-    <color name="colorAccentDark">#c7b800</color>
-    <color name="colorWhite">#ffff</color>
-    <color name="colorBlack">#0000</color>
-    <color name="colorRed">#F44336</color>
+    <color name="colorAccent">#6abf69</color>
+    <color name="colorButton">#acf9cf</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorgrey">#eff0f2</color>
+    <color name="colorlight">#85d9ac</color>
+    <color name="color">#abaeac</color>
+    <color name="gradeientdua">#00B8D4</color>
+    <color name="gradeientduas">#84FFFF</color>
+    <color name="gradeienttiga">#00BFA5</color>
+    <color name="gradeienttigas">#A7FFEB</color>
+    <color name="merah">#ec2427</color>
+    <color name="lue">#105de2</color>
 </resources>
