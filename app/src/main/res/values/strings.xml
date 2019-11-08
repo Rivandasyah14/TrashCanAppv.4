@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="kg_sampah">kilo sampah</string>
+    <string name="poin">poin</string>
+    <string name="profilesampers">profile si sampers</string>
+    <string name="alamat">Khalidiya Tower B, twin tower, al khalidiya, abu dhabi</string>
+    <string name="no">085781207202</string>
+    <string name="berat">Berat</string>
 </resources>
