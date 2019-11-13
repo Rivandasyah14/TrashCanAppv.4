@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.rivan.trashcanv4.R;
+import com.rivan.trashcanv4.informasi.Informasi;
 import com.rivan.trashcanv4.tipesampah.TipeSampah;
 
 /**
@@ -19,7 +20,7 @@ import com.rivan.trashcanv4.tipesampah.TipeSampah;
  */
 public class FragmentNavHome extends Fragment {
 
-    Button testTipe;
+    Button testTipe, testInform;
 
     public FragmentNavHome() {
         // Required empty public constructor
@@ -32,11 +33,20 @@ public class FragmentNavHome extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_nav_home, container, false);
 
+
         testTipe = v.findViewById(R.id.test_tipe);
         testTipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), TipeSampah.class));
+            }
+        });
+
+        testInform= v.findViewById(R.id.test_informasi);
+        testInform.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), Informasi.class));
             }
         });
         return v;

@@ -6,18 +6,18 @@
         android:color="@color/colorRed" />
 
     <corners
-        android:radius="10dp"/>
+        android:radius="5dp"/>
 
     <stroke
-        android:width="3dp"
+        android:width="0dp"
         android:color="@color/colorRed"
         />
 
-    <padding
-        android:top="12dp"
-        android:right="10dp"
-        android:left="10dp"
-        android:bottom="12dp"/>
+<!--    <padding-->
+<!--        android:top="12dp"-->
+<!--        android:right="10dp"-->
+<!--        android:left="10dp"-->
+<!--        android:bottom="12dp"/>-->
 
 
 

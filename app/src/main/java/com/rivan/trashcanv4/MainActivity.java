@@ -1,16 +1,16 @@
 package com.rivan.trashcanv4;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.rivan.trashcanv4.nav.FragmentNavInformation;
+import com.rivan.trashcanv4.nav.FragmentNavHistory;
 import com.rivan.trashcanv4.nav.FragmentNavHome;
 import com.rivan.trashcanv4.nav.FragmentNavProfile;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavHome()).commit();
                     return true;
-                case R.id.navigation_information:
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavInformation()).commit();
+                case R.id.navigation_history:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavHistory()).commit();
                     return true;
                 case R.id.navigation_profile:
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FragmentNavProfile()).commit();
@@ -36,10 +36,22 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    //method for main fragment
+    private boolean loadFragment(Fragment fragment){
+        if (fragment != null){
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+            return true;
+        }
+        return false;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //set the main nav fragment
+        loadFragment(new FragmentNavHome());
 
         mTextMessage = findViewById(R.id.message);
         BottomNavigationView navigation =  findViewById(R.id.nav_view);

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding10"
+    app:cardElevation="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/padding10"
+        app:cardElevation="@dimen/padding10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/item_inf_text"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Cara tukar sampah"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text20"
+            android:layout_marginLeft="@dimen/padding25"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_right_arrow"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

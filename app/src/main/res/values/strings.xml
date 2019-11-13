@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrashCan v.4</string>
+    <string name="app_name">TrashCan</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -31,4 +31,5 @@
     <string name="tips_tukar_sampah_des">Botol sudah dalam keadaan kering, dan label telah dilepas</string>
     <string name="sudah_punya">Sudah punya</string>
     <string name="title_information">Informasi</string>
+    <string name="tipe_sampah">Tipe Sampah</string>
 </resources>

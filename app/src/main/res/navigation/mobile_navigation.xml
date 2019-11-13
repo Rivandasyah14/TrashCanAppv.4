@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.rivan.trashcanv4.ui.home.HomeFragment"
+        android:name="com.rivan.trashcanv4.nav.FragmentNavHome"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_nav_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.rivan.trashcanv4.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_information"
+        android:name="com.rivan.trashcanv4.nav.FragmentNavHistory"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_nav_history" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.rivan.trashcanv4.ui.nav.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_profile"
+        android:name="com.rivan.trashcanv4.nav.FragmentNavProfile"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_nav_profile" />
 </navigation>

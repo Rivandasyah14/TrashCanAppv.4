@@ -22,10 +22,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="280dp"
-                    android:background="@drawable/tnshape"
+                    android:background="@color/colorPrimary"
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/prov_iv"
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
@@ -33,6 +34,7 @@
                         android:src="@color/colorWhite" />
 
                     <TextView
+                        android:id="@+id/prov_user"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
@@ -78,6 +80,7 @@
                                 android:textColor="@color/colorPrimaryDark"
                                 android:textSize="17sp"
                                 android:textStyle="bold" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -128,6 +131,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/prov_transaksi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/padding25"
@@ -149,6 +153,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/prov_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding25"
@@ -170,6 +175,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/prov_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding25"
@@ -191,6 +197,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/prov_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/padding25"
@@ -209,9 +216,9 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/padding20"
                         android:layout_marginBottom="100dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@drawable/tnshapeyellow"
                         android:text="Logout"
-                        android:textColor="#fff" />
+                        android:textColor="@color/colorPrimaryDark" />
 
                 </LinearLayout>
         </LinearLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/paddingall"
+    android:padding="@dimen/padding20"
     android:orientation="vertical"
     tools:context=".loginregis.LoginActivity">
 
@@ -26,39 +26,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.8"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tsignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padding20"
             android:text="@string/sign_in"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
+            android:textSize="@dimen/text25"
             android:textStyle="bold"/>
 
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edt_login_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:layout_height="55dp"
             android:drawableLeft="@drawable/ic_edt_mail"
             android:drawablePadding="@dimen/padding10"
             android:ems="10"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_primaryColor="@color/colorPrimaryLight"
+            app:met_errorColor="#ff0000"
+            app:met_floatingLabel="highlight"
             android:hint="@string/t_edt_email"
-            android:inputType="textPersonName"/>
+            android:inputType="textEmailSubject"/>
 
-        <EditText
+
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edt_login_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding10"
-            android:background="@drawable/editshape"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/padding5"
             android:drawableLeft="@drawable/ic_edt_password"
             android:drawablePadding="@dimen/padding10"
             android:ems="10"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_primaryColor="@color/colorPrimaryLight"
+            app:met_errorColor="#ff0000"
+            app:met_floatingLabel="highlight"
             android:hint="@string/password"
             android:inputType="textPassword"/>
 
@@ -77,13 +83,13 @@
             android:text="@string/atau"
             android:gravity="center"
             android:textSize="@dimen/text16"
-            android:layout_marginTop="@dimen/padding10"/>
+            android:layout_marginTop="@dimen/padding5"/>
 
         <Button
             android:id="@+id/tn_logingoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding10"
+            android:layout_marginTop="@dimen/padding5"
             android:background="@drawable/tnshapered"
             android:text="@string/google"
             android:textColor="@color/colorWhite"/>
@@ -121,7 +127,7 @@
             android:text="@string/sign_up"
             android:layout_toEndOf="@id/tvmid"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp"
+            android:textSize="@dimen/text16"
             android:textStyle="bold"/>
 
     </RelativeLayout>
