@@ -20,13 +20,13 @@
     <string name="confirm_password">Confirm Parssword</string>
     <string name="title_history">Riwayat</string>
     <string name="title_profile">Profile</string>
-    <string name="judul_tipe_sampah">Judul tipe sampah</string>
+    <string name="judul_tipe_sampah">Plastik - Botol</string>
     <string name="contoh">Contoh</string>
     <string name="rincian">Rincian</string>
     <string name="nama_lain">Nama</string>
     <string name="nama_lain_des">bottle</string>
     <string name="deskripsi">Deskripsi</string>
-    <string name="deskripsi_des">Botol air minuman colored pet, atau clear pet</string>
+    <string name="deskripsi_des"> botol yang terbuat dari plastik. Botol plastik biasanya dipakai untuk menyimpan cairan seperti air, minuman ringan, oli motor, minyak masak, obat, sampo, susu dan tinta. Mempunyai dua jenis yaitu yang berwarna dan bening. Ukuran dan bentuknya pun beragam.</string>
     <string name="tips_tukar_sampah">Tips tukar sampah</string>
     <string name="tips_tukar_sampah_des">Botol sudah dalam keadaan kering, dan label telah dilepas</string>
     <string name="sudah_punya">Sudah punya</string>

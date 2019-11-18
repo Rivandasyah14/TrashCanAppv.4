@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ProgressDialog progressDialog;
     SharedPreferencesManager sharedPreferencesManager;
 
-    private static final int RC_SIGN_IN = 123;
+    private static final int RC_SIGN_IN = 126;
     private static final String TAG = "test";
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
@@ -123,8 +123,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 responseLogin.enqueue(new Callback<ResponseLogin>() {
                     @Override
                     public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
+                        progressDialog.dismiss();
                         if (response.body().getHasil().equals("success")){
-                            progressDialog.dismiss();
                             sharedPreferencesManager.saveSpBoolean(SharedPreferencesManager.SP_SIGNED, true);
                             startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             finish();

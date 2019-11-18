@@ -13,7 +13,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".informasi.Informasi"></activity>
         <activity android:name=".tipesampah.DetailTipeSampah"
-            android:label="Plastik/Kertas"/>
+            android:label="Tipe Sampah">
+
+        </activity>
         <activity android:name=".tipesampah.TipeSampah"
             android:label="@string/tipe_sampah"/>
         <activity android:name=".loginregis.RegisterActivity" />
@@ -24,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" />

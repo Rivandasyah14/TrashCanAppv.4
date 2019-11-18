@@ -13,7 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.rivan.trashcanv4.R;
 import com.rivan.trashcanv4.loginregis.LoginActivity;
 
@@ -48,6 +50,10 @@ public class FragmentNavProfile extends Fragment implements View.OnClickListener
         tnLogout = v.findViewById(R.id.tnlogout);
         tnLogout.setOnClickListener(this);
 
+        FirebaseUser user = mAuth.getCurrentUser();
+        Glide.with(this).load(user.getPhotoUrl()).into(imageView);
+        tUser.setText(user.getDisplayName());
+        tUser.setText(user.getEmail());
         return v;
     }
 
@@ -55,7 +61,8 @@ public class FragmentNavProfile extends Fragment implements View.OnClickListener
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.tnlogout:
-                mAuth.signOut();
+                mAuth.getInstance().signOut();
+                break;
         }
     }
 
